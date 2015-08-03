@@ -82,6 +82,15 @@ Npm installs
 -	`npm install -g jeet`
 -	`npm install gulp-stylus autoprefixer-stylus nib axis rupture fluidity jeet --save-dev`
 
+[Stylus screencasts](https://www.youtube.com/watch?v=eJahtnmywMI)
+
+Stylus plugins
+
+-	[Jeet](http://jeet.gs/) and [screencast](https://www.youtube.com/watch?v=roqlCwEn4iI)
+-	[Axis](http://axis.netlify.com/) and [screencast](https://www.youtube.com/watch?v=Kv6H6mMDeuA)
+-	[Nib](https://github.com/tj/nib) and [screencast](http://www.screenr.com/M6a)
+-	[Rupture](http://jenius.github.io/rupture/) and [screencast](https://www.youtube.com/watch?v=fRVRtO95VhU)
+
 Lasso:
 
 -	Reference external assets
