@@ -77,6 +77,11 @@ Styles:
 -	Stylus
 -	Jeet and other nice Stylus addons :)
 
+Npm installs
+
+-	`npm install -g jeet`
+-	`npm install gulp-stylus autoprefixer-stylus nib axis rupture fluidity jeet --save-dev`
+
 Lasso:
 
 -	Reference external assets
