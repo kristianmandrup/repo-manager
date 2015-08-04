@@ -144,6 +144,8 @@ Styles:
 -	[Roots](http://roots.cx/)
 -	Jeet (optional)
 
+STOP USING: Markoa LAYOUTS and PARTIALS!!! Instead use Jade features for this!!!
+
 Npm installs (Roots will take care of most of these...)
 
 -	`npm install -g jeet`
