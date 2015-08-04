@@ -75,9 +75,14 @@ Styles:
 
 -	Semantic UI
 -	Stylus
--	Jeet and other nice Stylus addons :)
+-	[Roots](http://roots.cx/)
+-	Jeet (optional)
 
-Npm installs
+Roots - Superior static sites builder!!!
+
+[Roots screencast playlist](https://www.youtube.com/watch?v=fQq6kWhOSxk&list=PL_3xEq49qQMGQKc7CTFgf17zIwMeQbgay)
+
+Npm installs (Roots will take care of most of these...)
 
 -	`npm install -g jeet`
 -	`npm install gulp-stylus autoprefixer-stylus nib axis rupture fluidity jeet --save-dev`
@@ -91,6 +96,15 @@ Stylus plugins
 -	[Nib](https://github.com/tj/nib) and [screencast](http://www.screenr.com/M6a)
 -	[Rupture](http://jenius.github.io/rupture/) and [screencast](https://www.youtube.com/watch?v=fRVRtO95VhU)
 
-Lasso:
+Authoring Templates
+-------------------
+
+We should author Marko templates using [Jade](jade-lang.com), since it is much cleaner/faster. However, Jade only knows about certain tags, so we need to teach it about Marko tags and custom tags we define. For this we can use Pencil :)
+
+[Pencil](https://www.npmjs.com/package/pencil)
+
+It also improves the built in tags!!!
+
+### Lasso
 
 -	Reference external assets
