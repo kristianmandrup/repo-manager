@@ -28,7 +28,7 @@
     "lasso-require": "^1.3.6",
     "mocha": "^2.1.0",
     "nib": "^1.1.0",
-    "pencil": "^0.1.5",
+    "pencil": "gabrieleds/pencil#master",
     "rupture": "^0.6.1",
     "supertest": "^0.15.0"
   },
