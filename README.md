@@ -107,6 +107,8 @@ It also improves the built in tags!!!
 
 Configuration of Pencil has been started in `config/pencil` let's make it work with the build pipeline of Roots :)
 
+Next step is to have Pencil traverse the views folder and find the `marko-taglib.json` files, use it to find the dirs with tags and register them in the same fashion! Let's have fun!!!
+
 ### Lasso
 
 -	Reference external assets
