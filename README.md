@@ -105,6 +105,8 @@ We should author Marko templates using [Jade](jade-lang.com), since it is much c
 
 It also improves the built in tags!!!
 
+Configuration of Pencil has been started in `config/pencil` let's make it work with the build pipeline of Roots :)
+
 ### Lasso
 
 -	Reference external assets
