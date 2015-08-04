@@ -68,28 +68,49 @@ cd semantic/
 gulp build
 ```
 
-TODO
-----
+Roots
+-----
 
-Styles:
-
--	Semantic UI
--	Stylus
--	[Roots](http://roots.cx/)
--	Jeet (optional)
-
-Roots - Superior static sites builder!!!
+Superior static sites builder!!!
 
 [Roots screencast playlist](https://www.youtube.com/watch?v=fQq6kWhOSxk&list=PL_3xEq49qQMGQKc7CTFgf17zIwMeQbgay)
 
-Npm installs (Roots will take care of most of these...)
+-	[Built in extensions](http://roots.cx/extensions)
+-	[Writing custom extensions](http://roots.cx/docs/extensions)
 
--	`npm install -g jeet`
--	`npm install gulp-stylus autoprefixer-stylus nib axis rupture fluidity jeet --save-dev`
+### Records
 
-[Stylus screencasts](https://www.youtube.com/watch?v=eJahtnmywMI)
+Data extensions
 
-Stylus plugins
+-	[contentful: data from API endpoint such as CMS](https://github.com/carrot/roots-contentful)
+-	[yaml data](https://github.com/carrot/roots-yaml)
+-	[json data](https://github.com/carrot/roots-records)
+
+Katon local server
+------------------
+
+Super cool :)
+
+[Katon](http://roots.cx/articles/katon)
+
+`$ katon add 'roots watch --port $PORT --no-open'`
+
+`$PORT variable` will dynamically assign you a port so that you don't get stuck with a conflict.
+
+Your site will now be accessible via it's `http://<app>.ka` URL and you just need to pull it up in your browser. Edit a couple files and watch the *live reload* in action.
+
+To serve from specific static site folder:
+
+`$ katon add 'charge public --port $PORT'`
+
+Stylus
+------
+
+[Stylus](https://learnboost.github.io/stylus/) is the mean/clean super hero of SCSS. So much better!!! Pure Node :)
+
+[Stylus playlist screencasts](https://www.youtube.com/watch?v=eJahtnmywMI)
+
+### Stylus plugins
 
 -	[Jeet](http://jeet.gs/) and [screencast](https://www.youtube.com/watch?v=roqlCwEn4iI)
 -	[Axis](http://axis.netlify.com/) and [screencast](https://www.youtube.com/watch?v=Kv6H6mMDeuA)
@@ -111,4 +132,19 @@ Next step is to have Pencil traverse the views folder and find the `marko-taglib
 
 ### Lasso
 
--	Reference external assets
+-	[Referencing external assets](https://github.com/lasso-js/lasso#external-dependencies)
+
+TODO
+----
+
+Styles:
+
+-	Semantic UI
+-	Stylus
+-	[Roots](http://roots.cx/)
+-	Jeet (optional)
+
+Npm installs (Roots will take care of most of these...)
+
+-	`npm install -g jeet`
+-	`npm install gulp-stylus autoprefixer-stylus nib axis rupture fluidity jeet --save-dev`
