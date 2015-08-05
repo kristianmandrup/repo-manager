@@ -1,6 +1,9 @@
 let Pencil = require('pencil');
 let tags = require('./tags');
-let tagList = [].push(tags.marko).push(tags.lasso);
+
+let tagList = [];
+for (let name of ['marko', 'async', 'lasso'])
+  tagList.push(tags[name]);
 
 for (let tag of tagList)
   addTag(tag);

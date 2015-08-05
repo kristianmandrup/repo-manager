@@ -19,5 +19,12 @@ module.exports = {
     'lasso-page',
     'lasso-head',
     'lasso-body',
+  ],
+  async: [
+    'async-fragment',
+    'async-fragment-placeholder',
+    'async-fragment-error',
+    'async-fragment-timeout',
+    'async-fragments'
   ]
 }
