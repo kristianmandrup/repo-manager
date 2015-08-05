@@ -35,6 +35,10 @@ This project consists of multiple SPAs.
 ### Views
 
 ```bash
+public/
+  stylus/
+  fonts/
+  js/
 views/
   - /layouts
     - app-layout.marko

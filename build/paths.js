@@ -4,19 +4,18 @@ var path = require('path');
 var root = {
   app: 'src',
   output: 'dist',
-  styles: 'styles'
+  styles: 'public'
 }
 
 module.exports = {
-  root: appRoot,
+  root: root.app,
   source: path.join(root.app, '**/*.js'),
   jadeSrc: path.join(root.app, 'views/templates/**/*.jade'),
   html: path.join(root.app, '**/*.html'),
-  style: path.join(root.styles, 'css/**/*.css',
-  stylus: path.join(root.styles, 'stylus/**/*.scss',
-  styleDest: './styles/css',
-
-  output: outputRoot,
+  style: path.join(root.styles, 'css/**/*.css'),
+  stylus: path.join(root.styles, 'stylus/**/*.styl'),
+  styleDest: path.join(root.output, 'styles/css'),
+  output: root.output,
   sourceMapRelativePath: '../' + root.app,
   doc:'./doc',
   e2eSpecsSrc: 'test/e2e/src/*.js',

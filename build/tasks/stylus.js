@@ -5,12 +5,12 @@ var sourcemaps = require('gulp-sourcemaps');
 var axis = require('axis')
 var rupture = require('rupture');
 var jeet = require('jeet');
-var autoprefixer = require('autoprefixer');
+/*var autoprefixer = require('autoprefixer-core');*/
 
 gulp.task('stylus', function () {
   gulp.src(paths.stylus)
     .pipe(sourcemaps.init())
-    .pipe(stylus({'include css': true}).use([nib(), axis(), rupture(), jeet(), autoprefixer()]))
+    .pipe(stylus({'include css': true, use: [axis(), rupture(), jeet()/*, autoprefixer()*/]}))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.styleDest));
 });
