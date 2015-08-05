@@ -40,18 +40,21 @@ views/
     - app-layout.marko
   - /components
   - marko-taglib.json
-  - /pages/[app]/
-    - [app].marko
-    - [app]-layout.marko
-    - /components
-    - marko-taglib.json
+  - /pages/
+    - [app]/
+      - [app].marko
+      - [app]-layout.marko
+      - /components
+      - marko-taglib.json
 ```
 
 Each app can have its own custom tag lib. If a tag is not found for the SPA, the tag lib discovery will traverse the parent folder tree until it finds a tag lib with that tag.
 
+NOTE: We will likely change this as described further below!!!
+
 ### State
 
-When a page is mounted on an App container, it can be mounted with a State, representing all the data and data provider functions available on first render.
+When a page is mounted on an App container, it can be mounted with a state, representing all the data and data provider functions available on first render. The state can be either mounted as an object or a function.
 
 Tag libs
 --------
@@ -150,3 +153,90 @@ Npm installs (Roots will take care of most of these...)
 
 -	`npm install -g jeet`
 -	`npm install gulp-stylus autoprefixer-stylus nib axis rupture fluidity jeet --save-dev`
+
+New App file structure
+----------------------
+
+```sh
+/apps
+  /_global
+    /components
+    /state
+      index.js
+    /layouts
+      _default_page.jade
+  /index
+  /projects
+    /components
+      /project-feed
+        template.marko
+    /layouts
+      _page.jade
+    /state
+      index.js
+    /page
+      projects.jade
+      projects.marko
+      projects.browser.json
+    marko-taglib.json
+  /repositories
+  /teams
+  ...
+  marko-taglib.json  
+```
+
+We will have all application state and views (templates, page defs, taglibs etc.) under the same `/apps` folder. This makes it easy to port or extract the app as a single unit, such as creating a separate module for the app.
+
+Let's see if we can make Roots.cx play nice with this kind of structure. If not, perhaps drop the jade part of Roots and mainly use the Stylus compilation or just drop it for our own gulp tasks solution.
+
+We need to write a small app generator which generates an app with the basic file structure as defined for the `projects` app.
+
+### Generators
+
+The markoa CLI binaries can leverage Yeoman or Slush under the covers ;) Use node Commander for command API.
+
+Create new markoa project:
+
+`$ markoa new repo-man`
+
+Create new app in `/apps`:
+
+`$ markoa app projects`
+
+### Jade
+
+Each marko page or tag should be developed in jade and compiled to marko. We might need a post processing step to the compile process to rename files from default `.html` to `.marko` and strip any unnecessary markup generated in the process. By convention, all jade layout templates should be prefixed with underscore.
+
+### Jade compilation
+
+We can perhaps use the [Jade API](http://jade-lang.com/api/) directly or use the [Jade compiler](https://www.npmjs.com/package/jade-compiler). We can use Jade compilation to generate: HTML or javascript functions. The javascript can be re-used either on the server, the client or both!
+
+### Jade layout
+
+We should consider using Jade layouts in favor of Marko layouts. But perhaps we can combine them.
+
+*Page layout*
+
+```jade
+//- _page.jade
+doctype html
+html
+  head
+    block title
+      title Default title
+  body
+    block content
+```
+
+*Index page*
+
+```jade
+//- index.jade
+extends ../layouts/_page.jade
+
+block title
+  title Article Title
+
+block content
+  h1 My Article
+```
