@@ -1,4 +1,4 @@
-/*'use strict';
+'use strict';
 let markoa = require('markoa');
 let path = require('path');
 
@@ -14,6 +14,4 @@ myAppContainer.init(koaApp);
 
 let apps = ['project', 'repository'];
 // mounting multiple apps on appContainer instance
-myAppContainer.mountApps(apps);*/
-
-console.log("Example");
+myAppContainer.mountApps(apps);
