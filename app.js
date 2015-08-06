@@ -13,6 +13,8 @@ let koaApp = new Server(serverOpts).init(function(mws) {
 let AppContainer = markoa.AppContainer;
 let myAppContainer = new AppContainer(koaApp).start();
 
+let appConfigurator = new markoa.AppConfigurator(__dirname).create(koaApp);
+
 let apps = ['project', 'repository'];
 // mounting multiple apps on appContainer instance
-myAppContainer.mount.apps(apps);
+appConfigurator.mountApps(apps);
