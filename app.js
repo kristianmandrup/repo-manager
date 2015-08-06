@@ -17,4 +17,4 @@ let appConfigurator = new markoa.AppConfigurator(__dirname).create(koaApp);
 
 let apps = ['project', 'repository'];
 // mounting multiple apps on appContainer instance
-appConfigurator.mountApps(apps);
+appConfigurator.mountApps(apps).createRoutes();

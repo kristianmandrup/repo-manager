@@ -1,6 +1,8 @@
 # Semantic UI
 semantic/dist
 
+apps/**/*.marko.js
+
 # Logs
 logs
 *.log
