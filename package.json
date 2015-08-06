@@ -34,7 +34,9 @@
   },
   "dependencies": {
     "autoprefixer": "^5.2.0",
+    "axis": "^0.4.2",
     "better-console": "^0.2.4",
+    "css-pipeline": "^0.2.2",
     "del": "^1.2.0",
     "extend": "^3.0.0",
     "font-awesome": "^4.3.0",
@@ -62,12 +64,15 @@
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.4",
     "jquery": "^2.1.4",
+    "js-pipeline": "^0.2.1",
     "map-stream": "0.0.6",
     "markoa": "kristianmandrup/markoa",
     "moment": "^2.10.3",
     "nib": "^1.1.0",
     "require-dir": "^0.3.0",
     "require-dot-file": "^0.4.0",
+    "root": "^3.0.0",
+    "roots": "^3.2.2",
     "semantic-ui": "^2.0.7",
     "yamljs": "^0.2.3"
   }
