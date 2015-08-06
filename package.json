@@ -65,6 +65,7 @@
     "moment": "^2.10.3",
     "require-dot-file": "^0.4.0",
     "semantic-ui": "^2.0.7",
+    "sugar": "^1.4.1",
     "yamljs": "^0.2.3"
   }
 }
