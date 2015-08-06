@@ -4,14 +4,15 @@ let path = require('path');
 
 let lassoFile = path.join(__dirname, './lasso-config.json');
 let serverOpts = {port: 4004, lassoFile: lassoFile};
+let Server = markoa.Server;
 
-let koaApp = markoa.server(serverOpts).init(function(mws) {
+let koaApp = new Server(serverOpts).init(function(mws) {
   mws.minimal();
 });
 
-let myAppContainer = require('./lib/app-container');
-myAppContainer.init(koaApp);
+let AppContainer = markoa.AppContainer;
+let myAppContainer = new AppContainer(koaApp).start();
 
 let apps = ['project', 'repository'];
 // mounting multiple apps on appContainer instance
-myAppContainer.mountApps(apps);
+myAppContainer.mount.apps(apps);
