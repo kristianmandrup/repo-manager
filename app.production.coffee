@@ -1,10 +1,10 @@
-axis         = require 'axis'
-rupture      = require 'rupture'
-autoprefixer = require 'autoprefixer-stylus'
-jeet      = require 'jeet'
-js_pipeline  = require 'js-pipeline'
-css_pipeline = require 'css-pipeline'
-paths = require 'build/paths.js'
+axis          = require 'axis'
+rupture       = require 'rupture'
+autoprefixer  = require 'autoprefixer-stylus'
+jeet          = require 'jeet'
+js_pipeline   = require 'js-pipeline'
+css_pipeline  = require 'css-pipeline'
+paths         = require 'build/paths.js'
 
 module.exports =
   ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore']
