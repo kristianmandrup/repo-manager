@@ -72,7 +72,6 @@
     "gulp-watch": "^4.3.4",
     "jquery": "^2.1.4",
     "map-stream": "0.0.6",
-    "markoa": "kristianmandrup/markoa",
     "moment": "^2.10.3",
     "require-dot-file": "^0.4.0",
     "semantic-ui": "^2.0.7",
@@ -83,15 +82,12 @@
     "jquery": "^2.1.4",
     "map-stream": "0.0.6",
     "markoa": "kristianmandrup/markoa",
-    "moment": "^2.10.3",
     "require-dir": "^0.3.0",
     "require-dot-file": "^0.4.0",
     "root": "^3.0.0",
     "roots": "^3.2.2",
-    "semantic-ui": "^2.0.7",
-    "yamljs": "^0.2.3",
     "del": "^1.2.0",
     "extend": "^3.0.0",
-    "font-awesome": "^4.3.0"
+    "font-awesome": "^4.4.0"
   }
 }
