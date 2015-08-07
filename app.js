@@ -11,10 +11,11 @@ let koaApp = new Server(serverOpts).init(function(mws) {
 });
 
 let AppContainer = markoa.AppContainer;
-let myAppContainer = new AppContainer(koaApp); //.start();
+let myAppContainer = new AppContainer(); //.start();
 
-let appConfigurator = new markoa.AppConfigurator(__dirname).create(koaApp);
+let appConfigurator = new markoa.AppConfigurator(myAppContainer, {rootPath: __dirname});
 
 let apps = ['project', 'repository'];
 // mounting multiple apps on appContainer instance
-appConfigurator.mountApps(apps).createRoutes();
+appConfigurator.mountApps(apps);
+myAppContainer.createRoutes(koaApp).start();
