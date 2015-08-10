@@ -1,0 +1,6 @@
+
+<p>Hello ${data.name}!</p>
+<ul if="notEmpty(data.colors)">
+  <li style="color: $color" for="color in data.colors">$color</li>
+</ul>
+<div else>No colors!</div>
