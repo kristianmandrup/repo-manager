@@ -72,6 +72,7 @@
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.4",
     "jade": "^1.11.0",
+    "jade-markoa": "^0.1.0",
     "jquery": "^2.1.4",
     "js-pipeline": "0.2.x",
     "jstransformer-marked": "0.0.x",
