@@ -1,6 +1,8 @@
 Repo Manager
 ============
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kristianmandrup/repo-manager.svg)](https://greenkeeper.io/)
+
 Repo Project Manager for Web development projects using micro services architecture :)
 
 Requirements
